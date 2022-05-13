@@ -1,0 +1,25 @@
+class Solution:
+    def isPrime (self, n):
+        prime = True 
+        for i in range (2,n):
+            if n%i==0:
+                prime=False
+                break
+            return prime
+    def countprime(self,n:int)->int:
+        count=0
+        for i in range (2,n):
+            if self.checkprime(1):
+                count+=1
+        return count        
+For Input: 
+5
+
+Your Output: 
+True
+
+Expected Output: 
+1
+
+Output Difference
+True
